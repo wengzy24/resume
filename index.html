@@ -1,48 +1,48 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>我的在线简历（PDF 预览）</title>
-  <meta name="description" content="这是我的在线简历，支持在线预览与下载。">
+  <title>Will Weng — Online Resume</title>
+  <meta name="description" content="Online resume of Will Weng, available for preview and download.">
   <style>
     html,body{height:100%;margin:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Microsoft YaHei",sans-serif;background:#0b0f14;color:#e5eef7}
-    .wrap{max-width:1000px;margin:0 auto;padding:16px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         background:#f7fafc;color:#1a202c}
+    .wrap{max-width:960px;margin:0 auto;padding:16px}
     .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:8px 12px;border:1px solid rgba(255,255,255,.15);border-radius:10px;color:#e5eef7;text-decoration:none}
-    .btn:hover{border-color:#38bdf8}
-    .viewer{height:80vh;margin-top:12px;border:1px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;background:#0f1620}
-    .fallback{margin-top:12px;color:#a7b3c7;font-size:14px}
+    .btn{display:inline-block;padding:8px 12px;border:1px solid #cbd5e0;border-radius:8px;
+         background:#fff;color:#1a202c;text-decoration:none}
+    .btn:hover{border-color:#3182ce;color:#3182ce}
+    .viewer{height:80vh;margin-top:12px;border:1px solid #e2e8f0;border-radius:10px;
+            overflow:hidden;background:#fff}
+    .fallback{margin-top:12px;color:#4a5568;font-size:14px}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="top">
-      <h1 style="margin:0;font-size:22px">我的在线简历</h1>
+      <h1 style="margin:0;font-size:22px">Will Weng — Online Resume</h1>
       <div>
-        <a class="btn" href="resume.pdf" download>下载 PDF</a>
-        <!-- 如果你用的是 Google Drive 预览链接，也可以把下面 iframe 的 src 换成那个链接 -->
+        <a class="btn" href="Will_Weng_Resume_Letter.pdf" download>Download PDF</a>
       </div>
     </div>
 
-    <!-- 方式 1：直接嵌入本地同目录的 resume.pdf -->
+    <!-- Embedded PDF preview -->
     <div class="viewer">
       <iframe
-        src="resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
-        title="在线简历预览"
+        src="Will_Weng_Resume_Letter.pdf#toolbar=1&navpanes=0&scrollbar=1"
+        title="Resume Preview"
         width="100%" height="100%"
         style="border:0;"
       ></iframe>
     </div>
 
-    <!-- 方式 2（可选，改成 Drive 预览）：把上面的 iframe src 改成
-         https://drive.google.com/file/你的文件ID/preview
-         注意：要把共享权限设为“任何知道链接的人可查看” -->
-
     <div class="fallback">
-      如果你的浏览器不支持内嵌 PDF，请<a href="resume.pdf">点此打开</a>。
+      If your browser does not support embedded PDFs, please
+      <a href="Will_Weng_Resume_Letter.pdf">open the file directly</a>.
     </div>
   </div>
 </body>
 </html>
+
