@@ -1,48 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Will Weng — Online Resume</title>
-  <meta name="description" content="Online resume of Will Weng, available for preview and download.">
+  <meta charset="UTF-8">
+  <title>Will Zhengyang Weng - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html,body{height:100%;margin:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-         background:#f7fafc;color:#1a202c}
-    .wrap{max-width:960px;margin:0 auto;padding:16px}
-    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:8px 12px;border:1px solid #cbd5e0;border-radius:8px;
-         background:#fff;color:#1a202c;text-decoration:none}
-    .btn:hover{border-color:#3182ce;color:#3182ce}
-    .viewer{height:80vh;margin-top:12px;border:1px solid #e2e8f0;border-radius:10px;
-            overflow:hidden;background:#fff}
-    .fallback{margin-top:12px;color:#4a5568;font-size:14px}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .resume-container {
+      width: 100%;
+      max-width: 900px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+    .download {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .download a {
+      text-decoration: none;
+      background: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+    }
+    .download a:hover {
+      background: #005bb5;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <h1 style="margin:0;font-size:22px">Will Weng — Online Resume</h1>
-      <div>
-        <a class="btn" href="Will_Weng_Resume.pdf" download>Download PDF</a>
-      </div>
-    </div>
-
-    <!-- Embedded PDF preview -->
-    <div class="viewer">
-      <iframe
-        src="Will_Weng_Resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
-        title="Resume Preview"
-        width="100%" height="100%"
-        style="border:0;"
-      ></iframe>
-    </div>
-
-    <div class="fallback">
-      If your browser does not support embedded PDFs, please
-      <a href="Will_Weng_Resume.pdf">open the file directly</a>.
-    </div>
+  <header>
+    <h1>Will Zhengyang Weng - Resume</h1>
+    <p>Harvard University | Tsinghua University</p>
+  </header>
+  <div class="resume-container">
+    <!-- 这里的 PDF 文件名要和仓库里的一致 -->
+    <iframe src="Will_Weng_Resume.pdf"></iframe>
+  </div>
+  <div class="download">
+    <a href="Will_Weng_Resume.pdf" download>Download Resume (PDF)</a>
   </div>
 </body>
 </html>
+
 
